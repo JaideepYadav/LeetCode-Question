@@ -5,14 +5,16 @@ public:
         int k=nums.size()-1;
         int count=0;
         for(k;k>=2;k--){
-            int i=0;
-            while(i<k-1){
-                int j=i+1;
-                while(j<k){
-                    if((nums[i]+nums[j])>nums[k])count++;
-                    j++;
-                }
-                i++;
+            int i=0,j=k-1;
+            while(i<j){
+                    if((nums[i]+nums[j])>nums[k]){
+                        count+=(j-i);
+                        j--;
+                    }
+                    else
+                    i++;
+                
+               
             }
         }
         return count;
