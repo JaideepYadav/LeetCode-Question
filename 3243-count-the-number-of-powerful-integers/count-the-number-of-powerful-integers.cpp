@@ -12,7 +12,7 @@ public:
                 count+=a*pow(limit+1,remain-i-1);
             }
             else{
-                count+=pow(limit+1,remain-i);
+                count+=(limit+1)*pow(limit+1,remain-i-1);
                 return count;
             }
         }
