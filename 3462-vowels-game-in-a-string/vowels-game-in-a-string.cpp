@@ -16,7 +16,6 @@ public:
         }
        // if(count%2!=0 && index==n-1)return true;
        if(count==0)return false;
-        if(count%2!=0)return true;
         return true;
     }
 };
