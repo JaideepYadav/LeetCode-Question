@@ -10,12 +10,9 @@ public:
         vector<int>ans;
         for(int i=0;i<n;i++){
             if(isVowel(s[i])){
-                ans.push_back(i);
-                count++;
+                return true;
             }
         }
-       // if(count%2!=0 && index==n-1)return true;
-       if(count==0)return false;
-        return true;
+        return false;
     }
 };
