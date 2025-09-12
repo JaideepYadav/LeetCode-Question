@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isVowel(char ch) {
-    ch = tolower(ch); // Convert to lowercase to handle both cases
+    ch = tolower(ch); 
     return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
 }
     bool doesAliceWin(string s) {
